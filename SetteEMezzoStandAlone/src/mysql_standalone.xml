@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<comment>Dati di Connessione al DBMS</comment>
+	<entry key="Dbms">jdbc:mysql</entry>
+	<entry key="Class_Name">com.mysql.jdbc.Driver</entry>
+	<entry key="User_ID">user</entry>
+	<entry key="Password">user</entry>
+	<entry key="Server">localhost</entry>
+	<entry key="Database">setteemezzo_standalone</entry>
+	<entry key="Port">3306</entry>
+</properties>

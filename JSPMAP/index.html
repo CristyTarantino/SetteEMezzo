@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	
+	    <title>Sette e Mezzo</title>
+	    <meta name="author" content="Tarantino - Turturo" />
+	    <link rel="shortcut icon" href="img/favicon.ico"/>
+	    <link type="text/css" rel="stylesheet" href="stile1.css" title="primo"/>
+	    <script type="text/javascript" src="validazione.js"></script>
+	    
+	</head>
+	<body>
+	    <div id="applet">
+	    	<object 
+				codetype="application/java" 
+				codebase="."
+				classid="java:settemezzo.applet.MainApplet.class" 
+				archive="SetteEMezzoClient.jar"
+				width="800"
+				height="600">
+			<param name="porta" value="6502" />		 	
+			
+			<!--html alternativo -->
+            <applet 
+			   codebase = "."
+			   code     = "settemezzo.applet.MainApplet.class"
+			   archive="SetteEMezzoClient.jar"
+			   width    = "800"
+			   height   = "600">
+			<param name="porta" value="6502" />		 	
+			 </applet>
+            <!-- fine html alternativo -->
+	    	</object>
+	    </div>
+	</body>
+</html>

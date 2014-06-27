@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	
+	    <title>Modulo di registrazione</title>
+	    <meta name="author" content="Tarantino - Turturo" />
+	    <link rel="shortcut icon" href="img/favicon.ico"/>
+	    <link type="text/css" rel="stylesheet" href="stile1.css" title="primo"/>
+	    <link type="text/css" rel="alternate stylesheet" href="stile2.css" title="secondo"/>
+	    <script type="text/javascript" src="validazione.js"></script>
+	    
+	</head>
+	<body onload="lingua('language')">
+	
+		<div id="contenitore">
+			<form method="post" action="SaveUser.jsp" id="modulo">
+			    <fieldset id="fieldOne">
+			      <legend id="legOne"> Modulo di registrazione</legend>
+			        <div id="divLanguage">
+			          <label id="lblLanguage" for="language">Lingua</label>
+			              <select id="language" title="Seleziona la lingua" tabindex="1" onchange="lingua(this.id)">
+			                  <option id="it" selected="selected">Italiano</option>
+			                    <option id="en">Inglese</option>
+			                </select>
+			        </div>
+			        <hr  id="h1"/>
+			        
+			        <div>
+                         <p id="head"> &nbsp; </p>
+                    </div>
+			        
+			        <table id="table">
+						<tbody>
+						  <tr>
+							<td class="form" id="tdlNickname" >Nickname: </td>
+							<td><input type="text" id="nickname" name="nickname" maxlength="20" title="Inserisci il tuo nickname" tabindex="2" onblur="controlloNick('hide1')" /></td>
+							<td><img id="hide1" src="img/vuoto.gif" alt="" /> </td>
+						  </tr>
+						  <tr>
+							<td class="form" id="tdlPassword" >Password: </td>
+							<td><input type="password" id="password" name="password" maxlength="10" title="Inserisci la tua password" tabindex="3" onblur="controlloPsw('hide2')"/></td>
+							<td><img id="hide2" src="img/vuoto.gif" alt="" /> </td>
+						  </tr>
+						  <tr>
+							<td class="form" id="td2Password" >Conferma Password: </td>
+							<td><input type="password" id="password2" name="confPsw" maxlength="10" title="Riscrivi la tua password" tabindex="4" onblur="controlloPsw2('hide3')"/></td>
+							<td><img id="hide3" src="img/vuoto.gif" alt="" /> </td>
+						  </tr>
+						  <tr>
+							<td class="form" id="tdlEmail" >Email: </td>
+							<td><input type="text" id="email" name="email" maxlength="20" title="Inserisci il tuo indirizzo email" tabindex="6" onblur="controlloEmail('hide4')"/></td>
+							<td><img id="hide4" src="img/vuoto.gif" alt="" /> </td>
+						  </tr>
+						  <tr>
+							<td class="form" id="td2Email">Conferma Email: </td>
+							<td><input type="text" id="email2" name="confEmail" maxlength="20" title="Riscrivi il tuo indirizzo email" tabindex="6" onblur="controlloEmail2('hide5')"/></td>
+							<td><img id="hide5" src="img/vuoto.gif" alt="" /> </td>
+						  </tr>
+						  <tr id="button">
+							<td><input id="send" type="submit" value="Invio" title="Invia i dati appena inseriti" tabindex="7" /></td>
+							<td><input id="reset" type="reset" value="Cancella" title="Resetta tutti i campi appena inseriti" tabindex="8" /></td>
+						  </tr>
+						</tbody>
+			        </table>
+			        
+			    </fieldset>
+			</form>
+		</div>
+	
+	</body>
+</html>

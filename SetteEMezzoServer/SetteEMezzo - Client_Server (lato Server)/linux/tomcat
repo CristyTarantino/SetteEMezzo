@@ -1,0 +1,36 @@
+#!/bin/bash
+#
+# Startup script for the Tomcat server
+#
+# chkconfig: - 83 53
+# description: Starts and stops the Tomcat daemon.
+# processname: tomcat
+# pidfile: /var/run/tomcat.pid
+# See how we were called.
+case $1 in
+        start)
+                export JAVA_HOME=/usr/lib/jvm/java-6-sun/
+                export CLASSPATH=/usr/local/tomcat/lib/servlet-api.jar
+                export CLASSPATH=/usr/local/tomcat/lib/jsp-api.jar
+                export JRE_HOME=/usr/lib/jvm/java-6-sun/
+                echo "Tomcat is started"
+                sh /usr/local/tomcat/bin/startup.sh
+        ;;
+        stop)
+                export JRE_HOME=/usr/lib/jvm/java-6-sun/
+                sh /usr/local/tomcat/bin/shutdown.sh
+                echo "Tomcat is stopped"
+        ;;
+        restart)
+                export JRE_HOME=/usr/lib/jvm/java-6-sun/
+                sh /usr/local/tomcat/bin/shutdown.sh
+                echo "Tomcat is stopped"
+                sh /usr/local/tomcat/bin/startup.sh
+                echo "Tomcat is started"
+        ;;
+        *)
+                echo "Usage: /etc/init.d/tomcat start|stop|restart"
+        ;;
+esac
+exit 0
+
