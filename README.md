@@ -1,15 +1,7 @@
-SetteEMezzo
+Sette e Mezzo
 ===========
 
 Sette e Mezzo Italian Game Similar to Blackjack Implemented in Java
-
- ================================================================
-		 ______   __  __
-		|____  | |  \/  |
-		    / /__| \  / | ___ ___________  
-		   / / _ \ |\/| |/ _ \_  /_  / _ \
-		  / /  __/ |  | |  __// / / / (_) |
-		 /_/ \___|_|  |_|\___/___/___\___/
 
  ================================================================
        Autori in ordine alfabetico: Tarantino - Turturo
