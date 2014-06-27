@@ -4,7 +4,9 @@ Sette e Mezzo
 Sette e Mezzo Italian Game Similar to Blackjack Implemented in Java
 
  ================================================================
+ 
  Autori in ordine alfabetico: Tarantino - Turturo (2009)
+ 
  ================================================================
 
 Guida all'installazione dell'applicazione Sette e Mezzo lato Server Window:
